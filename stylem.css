@@ -1,5 +1,44 @@
 @charset 'UTF-8';
 
+@media screen and (min-width: 0px) {
+  body {
+    min-width: 500px;
+  }
+  
+  main {
+	float: none;
+	max-width: 90%;
+	margin-right:0px;
+  }
+  
+  .clock {
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+	min-width: 1000px;
+  }
+  
+  .greeting {
+	  float: none;
+	  margin-right:49px;
+	  max-width: 60%;
+  }
+  
+  .clock {
+	max-width: 200px;
+	margin-left: 0px;
+	margin-right: 0px;
+	float: left;
+  }
+}
+
 body {  
 	background-color:#1000;
 	max-width: 1000px;
