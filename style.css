@@ -1,0 +1,21 @@
+body {
+	background-color: lightpink;
+}
+
+.centerDiv {
+	max-width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	image-rendering: pixelated;
+}
+
+.servermanageDoor:hover {
+	content: url("servermanageDoor.png")
+}
+
+.siteDoor:hover {
+	content: url("siteDoor.png");
+}
