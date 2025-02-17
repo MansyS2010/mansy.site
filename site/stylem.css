@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 0px) {
   body {
-    min-width: 500px;
+    width: 100%;
   }
   
   main {
