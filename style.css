@@ -2,6 +2,23 @@ body {
 	background-color: lightpink;
 }
 
+#frame {
+	image-rendering: pixelated;
+	border:30px;
+	border-image-source:url(frame.png);
+	border-image-slice:15;
+	border-image-repeat:no-repeat;
+	border-image-width:50px;
+	border-image-outset:0px;
+	max-width:fit-content;
+	padding:50px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:18px;
+	text-align:center;
+	background-color: grey;
+}
+
 .centerDiv {
 	max-width: fit-content;
 	margin-left: 30px;
