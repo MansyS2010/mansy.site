@@ -76,7 +76,7 @@ p {
 	outline-style: solid;
 	outline-width: thin;
 	outline-color: black;
-	width: 20%;
+	width: 30%;
 	float: left;
 	display: block;
 	min-height: 320px;
@@ -103,7 +103,7 @@ aside {
 	outline-style: solid;
 	outline-width: thin;
 	outline-color: black;
-	width: 20%;
+	width: 30%;
 	float: right;
 	display: block;
 	min-height: 320px;
