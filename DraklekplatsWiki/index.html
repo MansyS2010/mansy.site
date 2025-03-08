@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 
 <html>
-<body>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="The Draklekplatsen Wiki">
@@ -12,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<title>Draklekplatsen Wiki</title>
 	<link rel="shortcut icon" type="image/png" href="../site/images/icon.png">
+	<script src="script.js"></script>
 </head>
     
 <header>
@@ -22,26 +22,51 @@
     border-width: 1px; 
     border-color: black; 
     padding: 5px;
-    height: 50px;">
-    <img height="50px" src="imgs/drak.webp">
-    <h1 style="left: 100px; top: 0px; padding: 5px; position: fixed; float: right;">Draklekplatsens Wikipage</h1>
+    height: 50px;
+	width: 100%;
+	left: -1px;">
+    <img height="50px" style="left: 10px; position: fixed;" src="imgs/drak.webp">
+    <h1 style="left: 90px; top: 0px; padding: 5px; position: fixed; float: right;">Draklekplatsens Wikipage</h1>
+	<button style="font-family: sans-serif; float: right; font-size: 24px; position: fixed; top: 25px; right: 10px;" onclick="hidepanel()">Göm/Visa meny</button>
 </div>
 </header>
+<body>
 
 <br><br><br><br>
     
-<aside style="min-height: 300px;">hej</aside>  
+<aside id="sidePanel" style="min-height: 300px; position: fixed; right: 5px;">
+hoppa dit du ska va meny<br>
+<a href="#generell">--> Generell info</a>
+<br><br>
+<a href="#historia">--> Historia</a>
+<br><br>
+<a href="#kritik">--> Kritik</a>
+
+</aside>  
     
 <main>
-<h1>Historia</h1>
-<p>Det här är fakta</p>
+<section id="generell">
+<h1>Generell info</h1>
+<p>Det här är info</p>
+</section>
 </main>
 
 <br>
     
 <main>
+<section id="historia">
 <h1>Historia</h1>
 <p>Det här är fakta</p>
+</section>
+</main>
+
+<br>
+    
+<main>
+<section id="kritik">
+<h1>Kritik</h1>
+<p>Det här är kritik</p>
+</section>
 </main>
     
 <br>
