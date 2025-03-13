@@ -1,11 +1,11 @@
 body {
 	background-color: lightpink;
-	font-family: undertale;
+	font-family: "undertale";
 }
 
 @font-face {
-  font-family: undertale;
-  src: url(fonts/8bitOperatorPlusSC-Bold.ttf);
+  font-family: "undertale";
+  src: url("fonts/8bitOperatorPlusSC-Bold.ttf");
 }
 
 h1 {
