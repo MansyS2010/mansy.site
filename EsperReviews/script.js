@@ -8,7 +8,7 @@ function hidepanel() {
 }
 
 function showText() {
-  var x = document.getElemetById("secretText");
+  var x = document.getElementById("secretText");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
