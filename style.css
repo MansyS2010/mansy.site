@@ -43,6 +43,10 @@ img {
 	content: url("doors/servermanageDoor.png")
 }
 
+.experimentsDoor:hover {
+	content: url("doors/experiments.png")
+}
+
 .siteDoor:hover {
 	content: url("doors/siteDoor.png");
 }

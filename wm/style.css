@@ -1,0 +1,61 @@
+body {
+    background-color: gray;
+    font-family: Verdana, sans-serif;
+}
+
+/* Test Window Example */
+#Window{
+    border: 2px black solid;
+    position: absolute;
+    z-index: 9;
+    background-color: black;
+    width: 800px;
+    height: 600px;
+}
+#WindowContent{
+    background-color: white;
+}
+#WindowBar{
+    cursor: move;
+    z-index: 10;
+    background-color: cornflowerblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+/* Intro Window CSS */
+#Intro{
+    border: 2px black solid;
+    position: absolute;
+    z-index: 9;
+    background-color: white;
+    width: 800px;
+    height: 600px;
+}
+#IntroBar{
+    cursor: move;
+    z-index: 10;
+    background-color: cornflowerblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+/* mansysite.org Window CSS */
+#Site{
+    border: 2px black solid;
+    position: absolute;
+    z-index: 9;
+    background-color: white;
+    width: 800px;
+    height: 600px;
+}
+#SiteBar{
+    cursor: move;
+    z-index: 10;
+    background-color: cornflowerblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}

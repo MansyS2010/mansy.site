@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Window</title>
+</head>
+<body>
+    <button onclick="Windows('Intro',
+        '<h1>Hello fellow traveler of the internet!</h1>' +
+         'Welcome to my window manager website experiment! Hope you like it!',
+         800,600,
+         'Intro','IntroBar'
+    )"><img src="info.png"><br>Introduction</button>
+
+    <button onclick="site = WebsiteToHtml('https://mansysite.org/EsperReviews/', 550) ; Windows('Monster Reviews',
+         site,
+         800,600,
+         'Site','SiteBar'
+    )"><img src="monster.png"><br>Monster Reviews</button>
+</body>
+<script src="script.js"></script>
+</html>
