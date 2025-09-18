@@ -3,7 +3,7 @@
 function Windows(title = "Test", content = "boring shit", width = 800, height = 600, WindowID = "Window", WindowBarID = "WindowBar") {
     let WindowBar = document.createElement("div");
     WindowBar.id = WindowBarID;
-    WindowBar.innerHTML = "<button style='right:35px; position: absolute' onclick='ExpandWindow(" + '\"' + WindowID + '\"' + ")'>+</button> <button style='right:10px; position: absolute' onclick='this.parentElement.parentElement.remove()'>X</button>" + "<text style='margin-left:10px;'>" + title + "</text>";
+    WindowBar.innerHTML = "<button style='top:-10px; right:90px; position: absolute' onclick='DecreaseWindow(" + '\"' + WindowID + '\"' + ', ' + '\"' + width + '\"' + ', ' + '\"' + height + '\"' + ")'>-</button> <button style='top:-10px; right:50px; position: absolute' onclick='ExpandWindow(" + '\"' + WindowID + '\"' + ")'>+</button> <button style='top:-10px; right:10px; position: absolute' onclick='this.parentElement.parentElement.remove()'>X</button>" + "<text style='margin-left:10px;'>" + title + "</text>";
 
     let WindowContent = document.createElement("div");
     WindowContent.id = "WindowContent";
@@ -66,6 +66,10 @@ function WebsiteToHtml(URL, height) {
     return "<object type=\"text/html\" data=" + URL + " style=\"object-fit: fill; width:100%; height:" + height + "px \"></object>"
 }
 
+function VideoToHtml(URL) {
+    return "<iframe width=\"400\" height=\"300\" src=\"" + URL + "\"> </iframe>";
+}
+
 function ExpandWindow(ID) {
     let Window = document.getElementById(ID);
     let width = '1200px'
@@ -74,4 +78,13 @@ function ExpandWindow(ID) {
     Window.style.height = height;
     const y = Window.getElementsByTagName("object");
     y[0].style.height = height;
+}
+
+function DecreaseWindow(ID, width, height) {
+    let Window = document.getElementById(ID);
+    console.log(width, height);
+    Window.style.width = width + 'px';
+    Window.style.height = height + 'px';
+    const y = Window.getElementsByTagName("object");
+    y[0].style.height = height + 'px';
 }
