@@ -1,15 +1,18 @@
 
 
-function Windows(title = "Test", content = "boring shit", width = 800, height = 600, WindowID = "Window", WindowBarID = "WindowBar") {
+function Windows(title = "Test", content = "boring shit", width = 800, height = 600, WindowID = "Window") {
     let WindowBar = document.createElement("div");
-    WindowBar.id = WindowBarID;
+    WindowBar.className = "WindowBar";
+    WindowBar.id = WindowID + "Bar";
+    console.log(WindowBar.id);
     WindowBar.innerHTML = "<button style='top:-10px; right:80px; position: absolute' onclick='DecreaseWindow(" + '\"' + WindowID + '\"' + ', ' + '\"' + width + '\"' + ', ' + '\"' + height + '\"' + ")'>-</button> <button style='top:-10px; right:40px; position: absolute' onclick='ExpandWindow(" + '\"' + WindowID + '\"' + ")'>+</button> <button style='top:-10px; right:0px; position: absolute' onclick='this.parentElement.parentElement.remove()'>X</button>" + "<text style='margin-left:10px;'>" + title + "</text>";
 
     let WindowContent = document.createElement("div");
-    WindowContent.id = "WindowContent";
+    WindowContent.className = "WindowContent";
     WindowContent.innerHTML = content;
 
     let Window = document.createElement("div");
+    Window.className = "Window";
     Window.id = WindowID;
     Window.style.width = width + 'px';
     Window.style.height = height + 'px';

@@ -16,77 +16,41 @@ button {
 }
 
 /* Test Window Example */
-#Window{
+.Window{
     border: 2px black solid;
     position: absolute;
     z-index: 9;
-    background-color: black;
+    background-color: white;
     width: 800px;
     height: 600px;
 }
-#WindowContent{
+.WindowContent{
     background-color: white;
 }
-#WindowBar{
+.WindowBar{
     cursor: move;
     z-index: 10;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #FFFFFF #808080 #808080 #FFFFFF;
     background-color: cornflowerblue;
+    outline: 1px solid #000000;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
 }
 
 /* Intro Window CSS */
-#Intro{
-    border: 2px black solid;
-    position: absolute;
-    z-index: 9;
-    background-color: white;
-    width: 800px;
-    height: 600px;
-}
 #IntroBar{
-    cursor: move;
-    z-index: 10;
     background-color: cornflowerblue;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
 }
 
 /* Monster Reviews Window CSS */
-#Site{
-    border: 2px black solid;
-    position: absolute;
-    z-index: 9;
-    background-color: white;
-    width: 800px;
-    height: 600px;
-}
 #SiteBar{
-    cursor: move;
-    z-index: 10;
     background-color: rebeccapurple;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    color: white;
 }
 
 /* Subway Surfers Window CSS */
-#Surf{
-    border: 2px black solid;
-    position: absolute;
-    z-index: 9;
-    background-color: white;
-    width: 800px;
-    height: 600px;
-}
-#SurfBar{
-    cursor: move;
-    z-index: 10;
+#SurfBar {
     background-color: darkorange;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
 }
